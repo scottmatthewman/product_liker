@@ -22,8 +22,10 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
-
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore Rspec's list of cached examples
+/spec/examples.txt
