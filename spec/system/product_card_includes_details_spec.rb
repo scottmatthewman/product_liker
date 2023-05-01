@@ -53,4 +53,33 @@ RSpec.describe 'Product card details' do
       expect(card).to have_selector('div.no-image', text: 'No image')
     end
   end
+
+  describe 'Like counter display' do
+    it 'shows 0 when there are no likes' do
+      card = find_card(product_id: 1001)
+
+      expect(card).to have_selector('.likes-count', text: '0')
+    end
+
+    it 'shows 1 when there is 1 like' do
+      create(:like, article_id: 1001)
+
+      card = find_card(product_id: 1001)
+
+      expect(card).to have_selector('.likes-count', text: '1')
+    end
+
+    it 'correctly delimits large numbers of likes' do
+      # stub the value of count_for only for one product, leaving others unaffected
+      #
+      # This allows us to verify large numbers of likes without the overhead of creating the records
+      # but it's brittle - if we change the method signature of the call to the DB layer, this will break
+      allow(Like).to receive(:count_for).and_call_original
+      allow(Like).to receive(:count_for).with(1001).and_return(1_000_000)
+
+      card = find_card(product_id: 1001)
+
+      expect(card).to have_selector('.likes-count', text: '1,000,000')
+    end
+  end
 end

@@ -18,6 +18,9 @@ require:
 AllCops:
   NewCops: enable
 
+RSpec/ExampleLength:
+  Max: 15
+
 Style/Documentation:
   Enabled: false
 Style/FrozenStringLiteralComment:

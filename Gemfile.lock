@@ -89,6 +89,11 @@ GEM
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
     erubi (1.12.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -207,6 +212,8 @@ GEM
       rubocop (~> 1.33)
       rubocop-capybara (~> 2.17)
     ruby-progressbar (1.13.0)
+    shoulda-matchers (5.3.0)
+      activesupport (>= 5.2.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -237,6 +244,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (~> 3.39)
   debug
+  factory_bot_rails (~> 6.2)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   rspec-rails (~> 6.0)
@@ -244,6 +252,7 @@ DEPENDENCIES
   rubocop-performance (~> 1.17)
   rubocop-rails (~> 2.19)
   rubocop-rspec (~> 2.20)
+  shoulda-matchers (~> 5.3)
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data
