@@ -1,0 +1,9 @@
+shared:
+  articles: 'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json'
+
+test:
+  # NB: This is not a valid URL and should be overridden
+  # in individual tests, using WebMock to return specific
+  # JSON responses.
+  # However, it is used when testing the json_from_url method
+  articles: 'https://test/fixtures/test-articles-v4.json'
