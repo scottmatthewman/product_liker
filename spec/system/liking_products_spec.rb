@@ -1,9 +1,6 @@
 require 'rails_helper'
-require 'support/json_fixtures'
 
 RSpec.describe 'Liking a product' do
-  include JsonFixtures
-
   it 'increments the like count from 0 to 1 when the product has no previous likes', :js do
     mock_json_response(
       url: 'https://test/fixtures/test-articles-v4.json',

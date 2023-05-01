@@ -1,9 +1,6 @@
 require 'rails_helper'
-require 'support/json_fixtures'
 
 RSpec.describe 'Products page loading JSON' do
-  include JsonFixtures
-
   before do
     mock_json_response(
       url: 'https://test/fixtures/test-articles-v4.json',
