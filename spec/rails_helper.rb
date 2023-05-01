@@ -11,7 +11,7 @@ require 'capybara/rspec'
 require 'webmock/rspec'
 
 # Automatically load all helpers, defined in spec/initializers/*.rb
-# Dir[Rails.root.join('spec/initializers/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec/initializers/**/*.rb')].each { |f| require f }
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
