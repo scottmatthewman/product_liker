@@ -20,4 +20,24 @@ RSpec.describe Like do
       expect(described_class.count_for(article_id)).to eq(0)
     end
   end
+
+  describe '.all_counts' do
+    it 'returns a hash of article IDs and their like counts' do
+      create_list(:like, 43, article_id: 1_234)
+      create_list(:like, 12, article_id: 5_678)
+
+      all_counts = described_class.all_counts
+
+      expect(all_counts).to include(1_234 => 43, 5_678 => 12)
+    end
+
+    it 'returns zero for an article ID with no likes' do
+      create_list(:like, 43, article_id: 1_234)
+      create_list(:like, 12, article_id: 5_678)
+
+      all_counts = described_class.all_counts
+
+      expect(all_counts[9_012]).to eq(0)
+    end
+  end
 end
