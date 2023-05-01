@@ -10,7 +10,11 @@
     margin: 1rem;
     border: 1px solid #eee;
     border-radius: 1rem;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    box-shadow:
+            1px 1px 1px rgba(0, 0, 0, 0.02),
+            4px 4px 3px rgba(0, 0, 0, 0.05),
+            10px 10px 8px rgba(0, 0, 0, 0.07)
+    ;
 }
 
 .product-card article {
@@ -40,9 +44,9 @@
     width: 80px;
     height: 80px;
     white-space: nowrap;
-    border: 2px solid #ddd;
+    border: 2px solid var(--placeholder-color);
     border-radius: 1rem;
-    color: #ddd;
+    color: var(--placeholder-color);
     text-align: justify;
     margin-bottom: 1rem;
 }
@@ -68,19 +72,19 @@
 }
 
 .product-card dl dd {
-    color: #999;
+    color: var(--secondary-text-color);
 }
 .product-card dl dd a {
-    color: #6eccff;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .offerer {
-    color: #999;
+    color: var(--secondary-text-color);
     font-size: 0.8rem;
 }
 .offerer span {
-    color: #2E2F30;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -89,22 +93,23 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #f0f7fc;
+    background-color: var(--button-bg-color);
     font-size: 0.6rem;
     padding: 0.2rem;
-    color: #27a3f5;
-    border: 1px solid #27a3f5;
+    color: var(--button-fg-color);
+    border: 1px solid var(--button-fg-color);
     border-radius: 0.2rem;
     font-weight: bold;
     transition: .2s;
 }
 .like-button:hover, .like-button:focus {
-    background-color: #27a3f5;
-    color: #fff;
+    background-color: var(--button-hover-bg-color);
+    border-color: var(--button-hover-bg-color);
+    color: var(--button-hover-fg-color);
 }
 .like-button:active {
-    background-color: #104466;
-    color: #fff;
+    background-color: var(--button-active-bg-color);
+    color: var(--button-active-fg-color);
 }
 .likes-count {
     margin-left: 0.5rem;

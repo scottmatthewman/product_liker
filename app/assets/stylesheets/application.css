@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+    --text-color: #222;
+    --secondary-text-color: #999;
+    --link-color: #007bff;
+    --placeholder-color: #ddd;
+
+    --button-bg-color: #f0f7fc;
+    --button-fg-color: #27a3f5;
+    --button-hover-bg-color: #27a3f5;
+    --button-hover-fg-color: #fff;
+    --button-active-bg-color: #104466;
+    --button-active-fg-color: #fff;
+}
