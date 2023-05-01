@@ -5,8 +5,6 @@ RSpec.describe 'Products page loading JSON' do
   include JsonFixtures
 
   before do
-    driven_by(:rack_test)
-
     mock_json_response(
       url: 'https://test/fixtures/test-articles-v4.json',
       local_file: 'products.json'

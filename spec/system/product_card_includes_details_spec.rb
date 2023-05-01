@@ -5,8 +5,6 @@ RSpec.describe 'Product card details' do
   include JsonFixtures
 
   before do
-    driven_by(:rack_test)
-
     mock_json_response(
       url: 'https://test/fixtures/test-articles-v4.json',
       local_file: 'products.json'
@@ -28,7 +26,7 @@ RSpec.describe 'Product card details' do
       expect(card).to have_selector('.title', text: 'Air Freshener')
       expect(card).to have_selector('.offerer', text: 'Lloyd is offering')
       expect(card).to have_selector('.description', text: 'This is a description of the air freshener')
-      expect(card).to have_selector('img[src="/photos/1001/medium.jpg"]')
+      expect(card).to have_selector('img[src="/test/photo/1001_medium.gif"]')
     end
   end
 
@@ -39,7 +37,7 @@ RSpec.describe 'Product card details' do
       expect(card).to have_selector('.title', text: 'Printer Cartridges')
       expect(card).to have_selector('.offerer', text: 'Marti is offering')
       expect(card).to have_selector('.description', text: 'This is a description of the printer cartridges')
-      expect(card).to have_selector('img[src="/photos/1002/medium.jpg"]')
+      expect(card).to have_selector('img[src="/test/photo/1002_medium.gif"]')
     end
   end
 
