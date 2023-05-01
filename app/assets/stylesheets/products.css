@@ -7,15 +7,22 @@
 }
 
 .product-card {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-column-gap: 1rem;
-    align-items: flex-start;
     margin: 1rem;
     border: 1px solid #eee;
     border-radius: 1rem;
-    padding: 0.5rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.product-card article {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-column-gap: 1rem;
+    padding: 0.5rem;
+}
+
+.product-card aside {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card img {
@@ -75,4 +82,30 @@
 .offerer span {
     color: #2E2F30;
     font-weight: bold;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f7fc;
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    color: #27a3f5;
+    border: 1px solid #27a3f5;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    transition: .2s;
+}
+.like-button:hover, .like-button:focus {
+    background-color: #27a3f5;
+    color: #fff;
+}
+.like-button:active {
+    background-color: #104466;
+    color: #fff;
+}
+.likes-count {
+    margin-left: 0.5rem;
 }
