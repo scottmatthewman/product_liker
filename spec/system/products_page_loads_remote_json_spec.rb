@@ -1,14 +1,16 @@
 require 'rails_helper'
+require 'support/json_fixtures'
 
 RSpec.describe 'Products page loading JSON' do
+  include JsonFixtures
+
   before do
     driven_by(:rack_test)
 
-    json_path = Rails.root.join('spec/fixtures/json/products.json')
-    json_contents = File.read(json_path)
-
-    stub_request(:get, /test-articles-v4.json/)
-      .to_return(status: 200, body: json_contents, headers: { 'Content-Type' => 'application/json' })
+    mock_json_response(
+      url: 'https://test/fixtures/test-articles-v4.json',
+      local_file: 'products.json'
+    )
   end
 
   it 'includes an entry for each product' do
