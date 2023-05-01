@@ -4,11 +4,7 @@ require 'support/json_fixtures'
 RSpec.describe 'Liking a product' do
   include JsonFixtures
 
-  before do
-    driven_by(:rack_test)
-  end
-
-  it 'increments the like count from 0 to 1 when the product has no previous likes', :aggregate_failures do
+  it 'increments the like count from 0 to 1 when the product has no previous likes', :aggregate_failures, :js do
     mock_json_response(
       url: 'https://test/fixtures/test-articles-v4.json',
       local_file: 'products.json'
@@ -25,7 +21,7 @@ RSpec.describe 'Liking a product' do
     expect(page).to have_selector('li[data-product-id="1001"] span.likes-count', text: '1')
   end
 
-  it 'increments the like count from 1 to 2 when the product has 1 previous like', :aggregate_failures do
+  it 'increments the like count from 1 to 2 when the product has 1 previous like', :aggregate_failures, :js do
     create(:like, article_id: 1001)
 
     mock_json_response(

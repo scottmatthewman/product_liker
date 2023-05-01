@@ -8,7 +8,6 @@ require 'rspec/rails'
 
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'capybara/rspec'
-require 'webmock/rspec'
 
 # Automatically load all helpers, defined in spec/initializers/*.rb
 Dir[Rails.root.join('spec/initializers/**/*.rb')].each { |f| require f }
