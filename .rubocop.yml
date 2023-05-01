@@ -20,6 +20,9 @@ AllCops:
 
 RSpec/ExampleLength:
   Max: 15
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/system/*
 
 Style/Documentation:
   Enabled: false

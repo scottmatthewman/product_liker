@@ -20,7 +20,7 @@ RSpec.describe 'Product card details' do
   # relevant data. As the card UI develops, we may provide instances in the JSON with examples
   # of differences between the cards, and then we can add tests for those differences.
   context 'with the first product' do
-    it 'includes the title, user name, description, and image', :aggregate_failures do
+    it 'includes the title, user name, description, and image' do
       card = find_card(product_id: 1001)
 
       expect(card).to have_selector('.title', text: 'Air Freshener')
@@ -31,7 +31,7 @@ RSpec.describe 'Product card details' do
   end
 
   context 'with the second product' do
-    it 'includes the title, user name, description, and image', :aggregate_failures do
+    it 'includes the title, user name, description, and image' do
       card = find_card(product_id: 1002)
 
       expect(card).to have_selector('.title', text: 'Printer Cartridges')
@@ -42,7 +42,7 @@ RSpec.describe 'Product card details' do
   end
 
   context 'with the third product' do
-    it 'includes the title, user name, description, and placeholder', :aggregate_failures do
+    it 'includes the title, user name, description, and placeholder' do
       card = find_card(product_id: 1003)
 
       expect(card).to have_selector('.title', text: 'Waterproof jacket')
