@@ -1,3 +1,19 @@
-<li data-product-id="<%= product[:id] %>">
-  <h2><%= product[:title] %></h2>
+<li class="product-card zoom" data-product-id="<%= product[:id] %>">
+  <%= product_image(product, size: :medium) %>
+  <article>
+    <div class="offerer"><span><%= product.dig(:user, :first_name) %></span> is offering</div>
+    <h2 class="title"><%= product[:title] %></h2>
+    <p class="description"><%= product[:description] %></p>
+    <dl>
+      <dt>Location</dt>
+      <dd>
+        <%= link_to(
+              product.dig(:location, :town),
+              "https://www.google.com/maps/search/?api=1&query=#{product.dig(:location, :latitude)},#{product.dig(:location, :longitude)}",
+              target: "_blank") %>
+      </dd>
+      <dt>Collection</dt>
+      <dd><%= product[:collection_notes] %></dd>
+    </dl>
+  </article>
 </li>

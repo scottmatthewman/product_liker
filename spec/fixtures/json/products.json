@@ -2,7 +2,7 @@
   {
     "id": 1001,
     "title": "Air Freshener",
-    "description": "Device only but refills are available most places",
+    "description": "This is a description of the air freshener",
     "donation_description": "",
     "collection": {
       "id": 0
@@ -40,10 +40,10 @@
       {
         "uid": "00gRGrBRDFYrR2j-9SJVYg",
         "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/small_image.jpg"
+          "original": "/photos/1001/original.jpg",
+          "large": "/photos/1001/large.jpg",
+          "medium": "/photos/1001/medium.jpg",
+          "small": "/photos/1001/small.jpg"
         },
         "dimensions": {
           "width": 720,
@@ -55,10 +55,10 @@
       {
         "uid": "00gRGrBRDFYrR2j-9SJVYg",
         "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/00gRGrBRDFYrR2j-9SJVYg\/small_image.jpg"
+          "original": "/images/1001/original.jpg",
+          "large": "/images/1001/large.jpg",
+          "medium": "/images/1001/medium.jpg",
+          "small": "/images/1001/small.jpg"
         },
         "dimensions": {
           "width": 720,
@@ -109,7 +109,7 @@
   {
     "id": 1002,
     "title": "Printer Cartridges",
-    "description": "7 X T0714 (yellow)\n4 X T0711 (black)\n1 X E712 (cyan)\n4 X E713 \/ T0713 (magenta)\n\n",
+    "description": "This is a description of the printer cartridges",
     "donation_description": "",
     "collection": {
       "id": 0
@@ -147,10 +147,10 @@
       {
         "uid": "Y9d--jZv7f0GoLDn3SbH6A",
         "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/small_image.jpg"
+          "original": "/photos/1002/original.jpg",
+          "large": "/photos/1002/large.jpg",
+          "medium": "/photos/1002/medium.jpg",
+          "small": "/photos/1002/small.jpg"
         },
         "dimensions": {
           "width": 1280,
@@ -162,10 +162,10 @@
       {
         "uid": "Y9d--jZv7f0GoLDn3SbH6A",
         "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/Y9d--jZv7f0GoLDn3SbH6A\/small_image.jpg"
+          "original": "/images/1002/original.jpg",
+          "large": "/images/1002/large.jpg",
+          "medium": "/images/1002/medium.jpg",
+          "small": "/images/1002/small.jpg"
         },
         "dimensions": {
           "width": 1280,
@@ -174,8 +174,8 @@
       }
     ],
     "user": {
-      "id": 8039,
-      "first_name": "Lloyd",
+      "id": 8040,
+      "first_name": "Marti",
       "current_avatar": {
         "original": "https:\/\/cdn.olioex.com\/uploads\/avatar\/file\/oZq8DF3dzLEi3Fnf4XxMrg\/image.jpg",
         "large": "https:\/\/cdn.olioex.com\/uploads\/avatar\/file\/oZq8DF3dzLEi3Fnf4XxMrg\/large_image.jpg",
@@ -216,7 +216,7 @@
   {
     "id": 1003,
     "title": "Waterproof jacket",
-    "description": "Size 42R, not used. #back2school",
+    "description": "This is a description of the waterproof jacket",
     "donation_description": "",
     "collection": {
       "id": 0
@@ -250,39 +250,11 @@
       "linked": 0,
       "request_id": null
     },
-    "photos": [
-      {
-        "uid": "PEjDytnWyyHcl-3wjV9ZAg",
-        "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/small_image.jpg"
-        },
-        "dimensions": {
-          "width": 1280,
-          "height": 960
-        }
-      }
-    ],
-    "images": [
-      {
-        "uid": "PEjDytnWyyHcl-3wjV9ZAg",
-        "files": {
-          "original": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/image.jpg",
-          "large": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/large_image.jpg",
-          "medium": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/medium_image.jpg",
-          "small": "https:\/\/cdn.olioex.com\/uploads\/photo\/file\/PEjDytnWyyHcl-3wjV9ZAg\/small_image.jpg"
-        },
-        "dimensions": {
-          "width": 1280,
-          "height": 960
-        }
-      }
-    ],
+    "photos": [],
+    "images": [],
     "user": {
-      "id": 8039,
-      "first_name": "Lloyd",
+      "id": 8051,
+      "first_name": "Naomi",
       "current_avatar": {
         "original": "https:\/\/cdn.olioex.com\/uploads\/avatar\/file\/oZq8DF3dzLEi3Fnf4XxMrg\/image.jpg",
         "large": "https:\/\/cdn.olioex.com\/uploads\/avatar\/file\/oZq8DF3dzLEi3Fnf4XxMrg\/large_image.jpg",
