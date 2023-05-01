@@ -15,6 +15,18 @@ gem 'sqlite3', '~> 1.4'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
+# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
+gem 'importmap-rails'
+
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem 'turbo-rails'
+
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem 'stimulus-rails'
+
+# Use Redis for Action Cable
+gem 'redis', '~> 4.0'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
@@ -29,6 +41,7 @@ end
 
 group :test do
   gem 'capybara', '~> 3.39'
+  gem 'webdrivers', '~> 5.2', require: false
   gem 'webmock', '~> 3.18'
 end
 
