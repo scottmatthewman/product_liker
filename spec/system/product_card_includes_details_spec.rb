@@ -70,12 +70,7 @@ RSpec.describe 'Product card details' do
     end
 
     it 'correctly delimits large numbers of likes' do
-      # stub the value of count_for only for one product, leaving others unaffected
-      #
-      # This allows us to verify large numbers of likes without the overhead of creating the records
-      # but it's brittle - if we change the method signature of the call to the DB layer, this will break
-      allow(Like).to receive(:count_for).and_call_original
-      allow(Like).to receive(:count_for).with(1001).and_return(1_000_000)
+      allow(Like).to receive(:all_counts).and_return(1001 => 1_000_000)
 
       card = find_card(product_id: 1001)
 
