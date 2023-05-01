@@ -1,5 +1,7 @@
 <h1>Offered products</h1>
 
 <ol class="products-list">
-  <%= render partial: 'product', collection: @products, locals: { likes: @likes } %>
+  <% @products.each do |product| %>
+    <%= render partial: 'product', locals: { product:, likes: @likes[product[:id]] } %>
+  <% end %>
 </ol>
