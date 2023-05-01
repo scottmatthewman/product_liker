@@ -1,6 +1,6 @@
 <h1>Offered products</h1>
 
-<ol class="products-list">
+<ol class="products-list" data-controller="likes">
   <% @products.each do |product| %>
     <%= render partial: 'product', locals: { product:, likes: @likes[product[:id]] } %>
   <% end %>

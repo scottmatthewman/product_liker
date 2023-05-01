@@ -40,10 +40,10 @@
       {
         "uid": "00gRGrBRDFYrR2j-9SJVYg",
         "files": {
-          "original": "/photos/1001/original.jpg",
-          "large": "/photos/1001/large.jpg",
-          "medium": "/photos/1001/medium.jpg",
-          "small": "/photos/1001/small.jpg"
+          "original": "/test/photo/1001_large.gif",
+          "large": "/test/photo/1001_large.gif",
+          "medium": "/test/photo/1001_medium.gif",
+          "small": "/test/photo/1001_small.gif"
         },
         "dimensions": {
           "width": 720,
@@ -55,10 +55,10 @@
       {
         "uid": "00gRGrBRDFYrR2j-9SJVYg",
         "files": {
-          "original": "/images/1001/original.jpg",
-          "large": "/images/1001/large.jpg",
-          "medium": "/images/1001/medium.jpg",
-          "small": "/images/1001/small.jpg"
+          "original": "/test/photo/1001_large.gif",
+          "large": "/test/photo/1001_large.gif",
+          "medium": "/test/photo/1001_medium.gif",
+          "small": "/test/photo/1001_small.gif"
         },
         "dimensions": {
           "width": 720,
@@ -147,10 +147,10 @@
       {
         "uid": "Y9d--jZv7f0GoLDn3SbH6A",
         "files": {
-          "original": "/photos/1002/original.jpg",
-          "large": "/photos/1002/large.jpg",
-          "medium": "/photos/1002/medium.jpg",
-          "small": "/photos/1002/small.jpg"
+          "original": "/test/photo/1002_large.gif",
+          "large": "/test/photo/1002_large.gif",
+          "medium": "/test/photo/1002_medium.gif",
+          "small": "/test/photo/1002_small.gif"
         },
         "dimensions": {
           "width": 1280,
@@ -162,10 +162,10 @@
       {
         "uid": "Y9d--jZv7f0GoLDn3SbH6A",
         "files": {
-          "original": "/images/1002/original.jpg",
-          "large": "/images/1002/large.jpg",
-          "medium": "/images/1002/medium.jpg",
-          "small": "/images/1002/small.jpg"
+          "original": "/test/photo/1002_large.gif",
+          "large": "/test/photo/1002_large.gif",
+          "medium": "/test/photo/1002_medium.gif",
+          "small": "/test/photo/1002_small.gif"
         },
         "dimensions": {
           "width": 1280,

@@ -2,9 +2,7 @@
   <article>
     <aside>
       <%= product_image(product, size: :medium) %>
-      <%= button_to(likes_path(article_id: product[:id]), class: 'like-button') do %>
-        ❤️ <span class="likes-count"><%= number_with_delimiter(likes) %></span>
-      <% end %>
+      <%= render 'likes/button', article_id: product[:id], likes: likes %>
     </aside>
     <main>
       <div class="offerer"><span><%= product.dig(:user, :first_name) %></span> is offering</div>

@@ -1,0 +1,3 @@
+<%= button_to(likes_path(article_id: article_id), data: { article_id: article_id, action: 'likes#create' }, class: 'like-button') do %>
+  ❤️ <span class="likes-count"><%= number_with_delimiter(likes) %></span>
+<% end %>
