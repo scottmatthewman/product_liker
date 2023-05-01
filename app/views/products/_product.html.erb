@@ -3,7 +3,7 @@
     <aside>
       <%= product_image(product, size: :medium) %>
       <%= button_to(likes_path(article_id: product[:id]), class: 'like-button') do %>
-        ❤️ <span class="likes-count"><%= number_with_delimiter(Like.count_for(product[:id])) %></span>
+        ❤️ <span class="likes-count"><%= number_with_delimiter(likes[product[:id]]) %></span>
       <% end %>
     </aside>
     <main>
